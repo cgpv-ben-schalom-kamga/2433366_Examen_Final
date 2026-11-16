@@ -179,7 +179,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 1
 --- !u!136 &2186911
 CapsuleCollider:
@@ -218,9 +218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeplacementJoueur
   gestionnaireDeControle: {fileID: 1350501379}
   camera: {fileID: 330585546}
-  vitesseMarche: 4
-  vitesseSprint: 7
-  acceleration: 10
+  vitesseMarche: 5
+  vitesseSprint: 10
   forceSaut: 5
 --- !u!1 &186785752
 GameObject:
@@ -233,7 +232,7 @@ GameObject:
   - component: {fileID: 186785753}
   m_Layer: 0
   m_Name: Environnement
-  m_TagString: Untagged
+  m_TagString: Sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -441,7 +440,7 @@ GameObject:
   - component: {fileID: 395784512}
   m_Layer: 6
   m_Name: CubeRampe
-  m_TagString: Untagged
+  m_TagString: Sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -680,7 +679,7 @@ GameObject:
   - component: {fileID: 491280624}
   m_Layer: 6
   m_Name: CubeSaut
-  m_TagString: Untagged
+  m_TagString: Sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -844,6 +843,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Generic_Ground_Flat_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1016621507197270, guid: e484c7ad7b1274b4c847940d3eb54d14, type: 3}
+      propertyPath: m_TagString
+      value: Sol
+      objectReference: {fileID: 0}
     - target: {fileID: 4063223197671162, guid: e484c7ad7b1274b4c847940d3eb54d14, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -908,7 +911,7 @@ GameObject:
   - component: {fileID: 1214273149}
   m_Layer: 0
   m_Name: CubeMur
-  m_TagString: Untagged
+  m_TagString: Sol
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -1144,7 +1147,6 @@ GameObject:
   - component: {fileID: 2142226784}
   - component: {fileID: 2142226783}
   - component: {fileID: 2142226786}
-  - component: {fileID: 2142226785}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -1210,35 +1212,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
---- !u!114 &2142226785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2142226780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f38bda98361e1de48a4ca2bd86ea3c17, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineRotationComposer
-  Composition:
-    ScreenPosition: {x: 0, y: 0}
-    DeadZone:
-      Enabled: 0
-      Size: {x: 0.2, y: 0.2}
-    HardLimits:
-      Enabled: 0
-      Size: {x: 0.8, y: 0.8}
-      Offset: {x: 0, y: 0}
-  CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
-  Damping: {x: 0.5, y: 0.5}
-  Lookahead:
-    Enabled: 0
-    Time: 0
-    Smoothing: 0
-    IgnoreY: 0
 --- !u!114 &2142226786
 MonoBehaviour:
   m_ObjectHideFlags: 0

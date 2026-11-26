@@ -14579,6 +14579,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4914818815454766, guid: 160a6121b4d25254da31bdab63ad82b7, type: 3}
   m_PrefabInstance: {fileID: 2031722908}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2033702903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2033702905}
+  - component: {fileID: 2033702904}
+  m_Layer: 0
+  m_Name: GestionParcours
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2033702904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033702903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21b323ed743cf9a43a7daa6f0a5c8916, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GestionParcours
+  NbrePiecesPourAfficherLaCle: 5
+  cle: {fileID: 553260687}
+  fragmentRamasse:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &2033702905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033702903}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2042878842
 GameObject:
   m_ObjectHideFlags: 0
@@ -15728,3 +15777,4 @@ SceneRoots:
   - {fileID: 1039085966}
   - {fileID: 1700806194}
   - {fileID: 485805265}
+  - {fileID: 2033702905}

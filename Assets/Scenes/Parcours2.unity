@@ -1522,6 +1522,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       insertIndex: -1
       addedObject: {fileID: 205737145}
+    - targetCorrespondingSourceObject: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 205737147}
   m_SourcePrefab: {fileID: 100100000, guid: 5527826a6315a224d850675a730c4f62, type: 3}
 --- !u!4 &205737143 stripped
 Transform:
@@ -1581,6 +1584,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &205737147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205737144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da20fe25df6d3d40ac57ed7e440394c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle_Translation
+  donnees: {fileID: 11400000, guid: aba97f74dc680124da4cc75840aa20b1, type: 2}
+  axe: {x: 0, y: 1, z: 0}
 --- !u!1001 &206461445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6315,6 +6332,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
       insertIndex: -1
       addedObject: {fileID: 689078954}
+    - targetCorrespondingSourceObject: {fileID: 1118085362977378, guid: 5527826a6315a224d850675a730c4f62, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 689078956}
   m_SourcePrefab: {fileID: 100100000, guid: 5527826a6315a224d850675a730c4f62, type: 3}
 --- !u!4 &689078952 stripped
 Transform:
@@ -6374,6 +6394,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.9964996, y: 0.99649537, z: 0.9964958}
   m_Center: {x: 0, y: -0.00000016391277, z: 0}
+--- !u!114 &689078956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689078953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da20fe25df6d3d40ac57ed7e440394c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle_Translation
+  donnees: {fileID: 11400000, guid: aba97f74dc680124da4cc75840aa20b1, type: 2}
+  axe: {x: 0, y: 1, z: 0}
 --- !u!1 &692900266
 GameObject:
   m_ObjectHideFlags: 0
@@ -14738,6 +14772,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 936837361358885588, guid: c037a3d7cf0b14449a2efc99e7a8f759, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2045375162}
+    - targetCorrespondingSourceObject: {fileID: 936837361358885588, guid: c037a3d7cf0b14449a2efc99e7a8f759, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2045375164}
   m_SourcePrefab: {fileID: 100100000, guid: c037a3d7cf0b14449a2efc99e7a8f759, type: 3}
 --- !u!4 &2045375160 stripped
 Transform:
@@ -14797,6 +14834,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.26665038, y: 0.7370306, z: 0.078111164}
   m_Center: {x: 0.072194904, y: 0.19337922, z: 0.00027949363}
+--- !u!114 &2045375164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045375161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f7cff39f62d66b47a5ac932d6740754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Obstacle_Rotation
+  donnees: {fileID: 11400000, guid: beac205c0635c6a4783f11c914d0c577, type: 2}
+  axe: {x: 0, y: 0, z: 1}
 --- !u!1001 &2051886327
 PrefabInstance:
   m_ObjectHideFlags: 0

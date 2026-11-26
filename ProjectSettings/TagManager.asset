@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Sol
   - Trampoline
+  - Repulseur
+  - ZoneMort
   layers:
   - Default
   - TransparentFX

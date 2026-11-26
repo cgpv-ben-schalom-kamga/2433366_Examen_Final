@@ -3,6 +3,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DonneesObstacles", menuName = "Scriptable Objects/DonneesObstacles")]
 public class DonneesObstacles : ScriptableObject
 {
-    public float vitesse;
-    public float amplitude;
+    [SerializeField]
+    private float vitesse;
+    public float Vitesse => vitesse;
+    [SerializeField]
+    private float amplitude;
+    public float Amplitude => amplitude;
 }

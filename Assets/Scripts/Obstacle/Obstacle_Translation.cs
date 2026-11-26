@@ -26,7 +26,7 @@ public class Obstacle_Translation : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        float decalage = Mathf.Sin(Time.time * donnees.vitesse) * donnees.amplitude;
+        float decalage = Mathf.Sin(Time.time * donnees.Vitesse) * donnees.Amplitude;
         rb.MovePosition(positionInitiale + axe * decalage);
     }
 }

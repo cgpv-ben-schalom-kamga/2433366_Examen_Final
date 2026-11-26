@@ -17,6 +17,8 @@ public class DeplacementJoueur : MonoBehaviour
     private float vitesseSprint = 7f;
     [SerializeField]
     private float forceSaut = 5f;
+    [SerializeField]
+    private float forceTrampoline = 10f;
     private Rigidbody rigidbody;
     private Vector2 deplacement;
     private bool sprintActif;
@@ -168,6 +170,29 @@ public class DeplacementJoueur : MonoBehaviour
         if (collision.collider.CompareTag("Sol"))
         {
             enCoursDeSaut = false;
+        }
+
+        if (collision.collider.CompareTag("Trampoline"))
+        {
+            rigidbody.AddForce(Vector3.up * forceTrampoline, ForceMode.VelocityChange);
+        }
+
+        if (collision.collider.CompareTag("Repulseur"))
+        {
+            Vector3 directionOpposee = -rigidbody.linearVelocity.normalized;
+            rigidbody.AddForce(directionOpposee * forceTrampoline, ForceMode.VelocityChange);
+        }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="other"></param>
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ZoneMort"))
+        {
+            GestionParcours.Instance.MortDuJoueur();
         }
     }
 

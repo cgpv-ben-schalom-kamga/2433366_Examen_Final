@@ -25,7 +25,7 @@ public class Obstacle_Rotation : MonoBehaviour
     /// </summary>
     void FixedUpdate()
     {
-        float angle = Mathf.Sin(Time.time * donnees.vitesse) * donnees.amplitude;
+        float angle = Mathf.Sin(Time.time * donnees.Vitesse) * donnees.Amplitude;
         rb.MoveRotation(rotationInitiale * Quaternion.Euler(axe * angle));
     }
 }
